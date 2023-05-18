@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <!-- <ion-toolbar>
+    <ion-title>Pedido</ion-title>
+  </ion-toolbar> -->
+</ion-header>
+<ion-content>
+  <ion-text>
+    <br>
+    <p style="font-size: 39px; font-family:Athletic Outfit; text-align: center">Reyy Gas</p>
+    <div style="color: rgb(155, 152, 151); font-size: 21px; font-family:inter;">
+      <p>Selecciona la dirección de entrega*</p>
+    </div>
+    <div style="color: rgb(14, 13, 13); font-size: 22px; font-family:arial; text-align: center">
+      <b>Selecciona el tamaño</b>
+    </div>
+    
+  </ion-text>
+  <br>
+  <ion-content style="text-align: center">
+    <ion-chip style="font-size: 21px; font-family:inter; background: #b68c1a; color: #ffffff;">Portátil</ion-chip> <ion-chip style="font-size: 21px; font-family:inter; background: #b68c1a; color: #ffffff;">Estacionario</ion-chip>
+    <ion-text>
+      <div style="text-align: justify; color: rgb(0, 0, 0); font-size: 16px; font-family:arial;">
+        <p>Capacidad del Tanque a llenar</p>
+      </div>
+      <div style="text-align: justify; color: rgb(0, 0, 0); font-size: 16px; font-family:arial;">
+        <p>¿Cuánto desea cargar?</p>
+      </div>  
+    </ion-text>
+    <ion-content style="text-align: left">
+      <ion-toggle>Su pedido es de entrega inmediata</ion-toggle>
+      <ion-text style="text-align: justify; color: rgb(0, 0, 0); font-size: 16px; font-family:arial;">
+        <p>Proporcione una fecha deseada</p>
+      </ion-text>
+      <ion-text style="text-align: justify; color: rgb(0, 0, 0); font-size: 16px; font-family:arial;">
+        <p>¿A qué hora?</p>
+      </ion-text>
+      <ion-text style="text-align: justify; color: rgb(0, 0, 0); font-size: 16px; font-family:arial;">
+        <p>Comentarios</p>
+        
+      </ion-text>
+     
+    </ion-content>
+
+    <ion-content>
+      <div class="ion-padding">
+        <ion-button (click)="goTotipoPago()" routerDirection="forward">Ir a la página 2</ion-button>
+      </div>
+    </ion-content>
+    <!-- <ion-item>
+      <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+    </ion-item> --> 
+  </ion-content>
+</ion-content>
+
+<!-- <ion-content style="text-align:center">
+  <ion-toolbar>
+    <ion-buttons>
+        <ion-button fill="solid">
+            Hacer Pedido
+        <ion-icon slot="end" name="arrow-forward-circle"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-content> -->
+

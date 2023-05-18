@@ -1,0 +1,81 @@
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+  <ion-app>
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-list-header style="font-size: 39px; font-family:Athletic Outfit;">Reyy Gas</ion-list-header>
+          <ion-note color="light" style="font-size: 16px; font-family:consolas;">gerentegeneral@reyygas.com.mx</ion-note>
+        </ion-toolbar>
+      </ion-header>
+      <br>
+    <div class="ion-text-center" style="font-size: 35px; color: rgb(134, 74, 24);  font-family:Cottage Cheese;"><b>Mi pasión el servicio</b></div>
+      <!-- <ion-content class="ion-padding">Mi pasión el servicio.</ion-content> -->
+     <!-- inicia el contenido del menu -->
+   <br>
+     <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerDirection]="'root'" [routerLink]="'/home'">
+              <ion-icon slot="start" [name]="'home'" color="secondary"></ion-icon>
+              <ion-label>
+                Inicio
+              </ion-label>
+            </ion-item><br>
+            <ion-item [routerDirection]="'root'" [routerLink]="'/pedido'">
+              <ion-icon slot="start" [name]="'receipt'" color="secondary"></ion-icon>
+              <ion-label>
+                Pedidos
+              </ion-label>
+            </ion-item><br>
+            <ion-item [routerDirection]="'root'" [routerLink]="'/tienda'">
+              <ion-icon slot="start" [name]="'bag-handle'" color="secondary"></ion-icon>
+              <ion-label>
+                Tienda Online
+              </ion-label>
+            </ion-item><br>
+            <ion-item [routerDirection]="'root'" [routerLink]="'/tips-ahorro'">
+              <ion-icon slot="start" [name]="'clipboard'" color="secondary"></ion-icon>
+              <ion-label>
+                Tips de Ahorro
+              </ion-label>
+            </ion-item><br>
+            <ion-item [routerDirection]="'root'" [routerLink]="'/recetas'">
+              <ion-icon slot="start" [name]="'fast-food'" color="secondary"></ion-icon>
+              <ion-label>
+                Recetas de Cocina
+              </ion-label>
+            </ion-item><br>
+            <ion-item [routerDirection]="'root'" [routerLink]="'/perfil'">
+              <ion-icon slot="start" [name]="'person-circle'" color="secondary"></ion-icon>
+              <ion-label>
+                Perfil
+              </ion-label>
+            </ion-item><br><br><br><br><br><br><br>
+
+            <h3><b>Otras opciones</b> </h3>
+            <ion-item [routerDirection]="'root'" [routerLink]="'/cerrar-sesion'">
+              <ion-icon slot="start" [name]="'exit'" color="tertiary"></ion-icon>
+              <ion-label>
+                Cerrar sesión
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <!-- <ion-title color="tertiary">Reyy Gas</ion-title> -->
+        </ion-toolbar>
+      </ion-header>
+      <!-- <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content> -->
+    </div>
+  </ion-app>
+</ion-app>

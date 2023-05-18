@@ -1,0 +1,7 @@
+{
+  "name": "ReyyGas2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
